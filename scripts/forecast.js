@@ -1,3 +1,7 @@
+// This page if for interacting with the API's
+
+
+
 const key = "9AthK4nAQQnK2qlDsKTySJLmGxHbaoPv";
 
 // get weather information
@@ -29,9 +33,4 @@ const getCity = async (city) => {
 
 };
 
-getCity('manchester').then(data => {
-        return getWeather(data.Key)
-    }).then(data => {
-        console.log(data);
-    }).catch(err => console.log(err));
 
